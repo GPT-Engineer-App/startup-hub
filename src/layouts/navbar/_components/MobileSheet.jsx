@@ -18,13 +18,14 @@ export const MobileSheet = ({ navItems }) => (
           className="flex items-center gap-2 text-lg font-semibold"
         >
           <Package2 className="h-6 w-6" />
-          <span className="sr-only">Acme Inc</span>
+          <span>SaaSLogo</span>
         </NavItem>
         {navItems.map((item) => (
           <NavItem key={item.to} to={item.to}>
             {item.title}
           </NavItem>
         ))}
+        <Button className="mt-4">Sign Up</Button>
       </nav>
     </SheetContent>
   </Sheet>
